@@ -71,9 +71,9 @@ const Home = ({ match }) => {
                     <h1 id="products_heading">Latest Products</h1>
 
                     <section id="products" className="container mt-5">
-                        <div className="row">
+                        <div className="row bg-light-gray" >
 
-                            {keyword ? (
+                            
                                 <Fragment>
                                     <div className="col-6 col-md-3 mt-5 mb-5">
                                         <div className="px-5">
@@ -158,11 +158,7 @@ const Home = ({ match }) => {
                                         </div>
                                     </div>
                                 </Fragment>
-                            ) : (
-                                    products.map(product => (
-                                        <Product key={product._id} product={product} col={3} />
-                                    ))
-                                )}
+                                
 
                         </div>
                     </section>

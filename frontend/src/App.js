@@ -72,7 +72,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <div className="container container-fluid">
+        <div className="container container-fluid bg-light ">
           <Route path="/" component={Home} exact />
           <Route path="/search/:keyword" component={Home} />
           <Route path="/product/:id" component={ProductDetails} exact />
